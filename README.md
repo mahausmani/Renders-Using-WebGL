@@ -1,3 +1,3 @@
-# The-Night-Sky-Fractals-WebGL
+# Renders Using WebGL
 
-Render of a Tree in the Night Sky using Fractals in WebGL
+
