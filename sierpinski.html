@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Bar</title>
+</head>
+<body>
+        <h3>change the value of n on line to see changing effects</h3>
+    <script id="vertex-shader" type="x-shader/x-vertex">
+            #version 300 es
+            in vec2 vPosition;
+            
+              void main()
+              {
+                gl_PointSize = 1.0;
+                gl_Position = vec4(vPosition, 0, 1);
+              }
+            </script>
+        
+            <script id="fragment-shader" type="x-shader/x-fragment">
+            #version 300 es
+              precision highp float;
+              out vec4 fragColor;
+        
+              void main()
+              {
+                  fragColor = vec4(1,0,0,1);
+              }
+            </script>
+        
+        
+            <script src="http://interactivecomputergraphics.com/8E/Code%20update/Common/initShadersES6.js"></script>
+            <script src="http://interactivecomputergraphics.com/8E/Code%20update/Common/MVES6.js"></script>
+        
+            <script type="text/javascript" src="sierpinski.js"></script>
+          </head>
+        
+          <body style="background-color:rgb(255, 255, 255);">
+            <br><br><br><br><br>  
+            <!-- <center> -->
+            <canvas id="gl-canvas" width="800" height="800">
+              Oops ... your browser doesn't support the HTML5 canvas element
+            </canvas>
+       
+          <script type="text/javascript" src="MVES6.js"></script>
+<script type="text/javascript" src="map.js"></script>
+          </body>
+        </html>
+</body>
+</html>
